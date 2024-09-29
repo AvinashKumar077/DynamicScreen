@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <!-- Allow traffic to 10.0.2.2 -->
+        <domain includeSubdomains="true">10.0.2.2</domain>
+    </domain-config>
+
+    <!-- This will allow all HTTP traffic, but only for development. -->
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>
